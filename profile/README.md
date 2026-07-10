@@ -21,14 +21,6 @@ Darwin-Agent focuses on **frontier research and pre-development of Agentic AI**.
 | 🎮 **Autonomous Reinforcement Learning** | Learning autonomously from interaction trajectories to drive self-improvement |
 | 🤝 **Multi-Agent Collaboration** | Division of labor, cooperation, and emergence across agents — toward collective intelligence |
 
-## 📦 Open Source
-
-| Repository | Description |
-|------------|-------------|
-| [**HarnessX**](https://github.com/Darwin-Agent/HarnessX) | Composable Python harness for running LLM agents and collecting training trajectories |
-| [**Mi-Memory**](https://github.com/Darwin-Agent/Mi-Memory) | Memory system for agents |
-| [**awesome-world-models-for-digital-agents**](https://github.com/Darwin-Agent/awesome-world-models-for-digital-agents) | Curated resources on world models for digital agents |
-
 ---
 
 <div align="center">
