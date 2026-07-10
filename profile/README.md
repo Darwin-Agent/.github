@@ -27,7 +27,6 @@ Darwin-Agent focuses on **frontier research and pre-development of Agentic AI**.
 |------------|-------------|
 | [**HarnessX**](https://github.com/Darwin-Agent/HarnessX) | Composable Python harness for running LLM agents and collecting training trajectories |
 | [**Mi-Memory**](https://github.com/Darwin-Agent/Mi-Memory) | Memory system for agents |
-| [**verl**](https://github.com/Darwin-Agent/verl) | Reinforcement learning training framework for LLMs and agents |
 | [**awesome-world-models-for-digital-agents**](https://github.com/Darwin-Agent/awesome-world-models-for-digital-agents) | Curated resources on world models for digital agents |
 
 ---
