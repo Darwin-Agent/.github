@@ -10,26 +10,48 @@ Building continuously learning, self-evolving agent systems across digital and p
 
 经验沉淀形成行动，行动反馈推动进化。
 
-[Team website](https://darwin-agent.github.io/) · [Research agenda](https://darwin-agent.github.io/#research) · [Selected work](https://darwin-agent.github.io/#work) · [Repositories](https://github.com/orgs/Darwin-Agent/repositories)
+[Team website](https://darwin-agent.github.io/) · [Our identity](https://darwin-agent.github.io/#identity) · [Research agenda](https://darwin-agent.github.io/#research) · [Selected work](https://darwin-agent.github.io/#work)
 
 </div>
 
 ## Our Mission
 
-An agent should not lose everything it learns when an interaction ends. We study how agents accumulate experience, turn it into effective action, and use feedback to improve the entire system—not only the underlying model.
+**Experience should compound. Action should improve.** Completing a task is not the end of learning. We study how an agent preserves what it discovers, puts that experience to work, and uses outcomes to improve the next interaction.
 
-Our research connects memory, executable harnesses, world models, learning from feedback, collective intelligence, and embodied intelligence in one continuous learning loop. Proposed changes must be evaluated before adoption.
+Our unit of evolution is the **entire agent system**—not only the underlying model. Memory, executable harnesses, world models, interaction structure, and feedback are complementary parts of one learning loop. Proposed changes must be evaluated before adoption.
+
+## Experience → Action → Evolution
+
+| Stage | Research goal |
+| --- | --- |
+| **Experience · 经验沉淀** | Turn interactions into retrievable memory, reusable knowledge, and evidence that can inform future decisions. |
+| **Action · 行动生成** | Put experience to work through memory, harnesses, and world models in digital environments and the physical world. |
+| **Evolution · 反馈进化** | Use outcomes to propose and evaluate changes, then carry validated improvements into the next interaction. |
+
+The goal is not simply to complete more tasks, but to make experience useful beyond the task in which it was acquired.
+
+## Our Identity · 标识理念
+
+**D surrounds A; A reaches outward.** The DA monogram gives this research ambition a shared visual form.
+
+- **D — Darwin · 积累与反馈：** a stable vertical spine and an enclosing arc represent accumulated experience, memory, and continuity of learning.
+- **A — Agent · 行动与演进：** the A extends from within the D; its pointed apex and angled strokes suggest upward, forward movement as experience becomes action.
+- **Connection & negative space · 连接与留白：** the letters share a connection while clear negative space keeps each recognizable. Learning and action belong to one system, not two isolated components.
+
+**以经验为根基，以行动为驱动，以反馈促迭代。** 这一标识表达的是系统的持续进化，覆盖记忆、Harness、世界模型、群体智能和具身智能，而非某个单一项目。
+
+Our primary brand color is orange, `#FF6900`. The identity expresses a research direction, not a claim that every project already implements the full learning loop.
 
 ## Research Directions
 
 | Direction | Focus | Explore |
 | --- | --- | --- |
-| **Experience & memory** | Preserve, retrieve, reflect on, and govern experience as reusable knowledge. | [Mi-Memory](https://github.com/Darwin-Agent/Mi-Memory) |
-| **Harness evolution** | Make prompts, tools, control flow, and execution frameworks composable, testable, and evolvable. | [HarnessX](https://github.com/Darwin-Agent/HarnessX) |
-| **World modeling & action learning** | Learn environment dynamics from interactions to support prediction, simulation, and action learning. | [WIA](https://darwin-agent.github.io/WIA/) · [World-model survey](https://github.com/Darwin-Agent/awesome-world-models-for-digital-agents) |
-| **Learning from feedback** | Turn trajectories and failure analysis into evaluated improvements and reusable skills. | [CAR-bench TRACE](https://github.com/Darwin-Agent/Car-bench-TRACE) |
-| **Collective intelligence** | Study collaboration, communication, and higher-order interaction structure in agent societies. | [Topological Collapse](https://github.com/Darwin-Agent/topological-collapse-agent-societies) |
-| **Embodied intelligence** | Connect perception, reasoning, and action through executable programs that evolve from physical rollout feedback. | [HarnessPAI](https://darwin-agent.github.io/HarnessPAI/) |
+| **Experience & memory** | Carry experience across interactions through reusable knowledge, provenance, lifecycle management, and selective forgetting. | [Mi-Memory](https://github.com/Darwin-Agent/Mi-Memory) |
+| **Harness evolution** | Turn knowledge into behavior through composable prompts, tools, and control flow that can be tested and improved. | [HarnessX](https://github.com/Darwin-Agent/HarnessX) |
+| **World modeling & action learning** | Learn environment dynamics from experience to inform prediction, simulation, and action learning. | [WIA](https://darwin-agent.github.io/WIA/) · [World-model survey](https://github.com/Darwin-Agent/awesome-world-models-for-digital-agents) |
+| **Learning from feedback** | Trace outcomes back to decisions, extract reusable skills, and evaluate proposed improvements. | [CAR-bench TRACE](https://github.com/Darwin-Agent/Car-bench-TRACE) |
+| **Collective intelligence** | Study how roles, communication, and higher-order interaction structure shape learning and action in agent societies. | [Topological Collapse](https://github.com/Darwin-Agent/topological-collapse-agent-societies) |
+| **Embodied intelligence** | Connect perception, reasoning, and physical action through executable programs that evolve from rollout feedback. | [HarnessPAI](https://darwin-agent.github.io/HarnessPAI/) |
 
 ## Selected Open Research
 
@@ -42,16 +64,6 @@ Our research connects memory, executable harnesses, world models, learning from 
 | **CAR-bench TRACE** | Trajectory-driven skill-bank evolution for in-car agents. | [Code & report](https://github.com/Darwin-Agent/Car-bench-TRACE) |
 | **Topological Collapse** | How higher-order interaction structure constrains collective intelligence. | [Code & reproducibility](https://github.com/Darwin-Agent/topological-collapse-agent-societies) |
 | **Digital Agents Meet World Models** | A survey and curated research map for world models in digital-agent environments. | [Survey & collection](https://github.com/Darwin-Agent/awesome-world-models-for-digital-agents) |
-
-## Our Identity
-
-**D surrounds A; A reaches outward.** Our shared monogram expresses one system that learns and acts:
-
-- **D — Darwin:** a stable spine and enclosing arc represent accumulated experience, memory, and feedback.
-- **A — Agent:** an outward-reaching, upward-pointing form represents action and continued evolution.
-- **Connection & negative space:** the letters share a connection while remaining distinguishable, linking learning and action without losing clarity.
-
-The identity spans the team's research directions rather than representing a single project. Our primary brand color is orange, `#FF6900`.
 
 ## Build With Us
 
