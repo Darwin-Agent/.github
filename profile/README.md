@@ -8,8 +8,6 @@
 
 Building continuously learning, self-evolving agent systems across digital and physical worlds.
 
-经验沉淀形成行动，行动反馈推动进化。
-
 [Team website](https://darwin-agent.github.io/) · [Our approach](https://darwin-agent.github.io/#learning) · [Research agenda](https://darwin-agent.github.io/#research) · [Selected work](https://darwin-agent.github.io/#work)
 
 </div>

@@ -10,12 +10,14 @@ not in a member's personal account.
 
 ## Brand assets
 
-- `assets/darwin-mark-da-orange.png`: original transparent DA monogram, orange `#FF6900`.
-- `assets/darwin-agent-banner.png`: shared banner composed from the original monogram.
+- `assets/darwin-mark-da-orange.png`: reviewed second-candidate DA monogram, orange `#FF6900`.
+- `assets/darwin-agent-banner.png`: shared banner composed from the current monogram.
 - `scripts/build_banner.py`: deterministic Pillow-based banner generator; requires the DejaVu Sans fonts.
 
-The original website and logo were prepared by Shaokun. Their source history is
-preserved in the website repository. No new license is assigned here.
+The original website and initial logo were prepared by Shaokun. Their source
+history is preserved in the website repository. The current logo is a reviewed
+image-generated revision; earlier assets remain recoverable through history.
+No new license is assigned here.
 
 The organization avatar is a separate GitHub setting. If it does not yet use
 the new identity, upload `assets/darwin-mark-da-orange.png` in the organization's
