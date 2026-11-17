@@ -10,7 +10,7 @@ not in a member's personal account.
 
 ## Brand assets
 
-- `assets/darwin-mark-da-orange.png`: reviewed second-candidate DA monogram, orange `#FF6900`.
+- `assets/darwin-mark-da-orange.png`: reviewed softer third-candidate DA monogram, orange `#FF6900`.
 - `assets/darwin-agent-banner.png`: shared banner composed from the current monogram.
 - `scripts/build_banner.py`: deterministic Pillow-based banner generator; requires the DejaVu Sans fonts.
 
