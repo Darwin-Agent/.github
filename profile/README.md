@@ -10,7 +10,7 @@ Building continuously learning, self-evolving agent systems across digital and p
 
 经验沉淀形成行动，行动反馈推动进化。
 
-[Team website](https://darwin-agent.github.io/) · [Our identity](https://darwin-agent.github.io/#identity) · [Research agenda](https://darwin-agent.github.io/#research) · [Selected work](https://darwin-agent.github.io/#work)
+[Team website](https://darwin-agent.github.io/) · [Our approach](https://darwin-agent.github.io/#learning) · [Research agenda](https://darwin-agent.github.io/#research) · [Selected work](https://darwin-agent.github.io/#work)
 
 </div>
 
@@ -29,18 +29,6 @@ Our unit of evolution is the **entire agent system**—not only the underlying m
 | **Evolution · 反馈进化** | Use outcomes to propose and evaluate changes, then carry validated improvements into the next interaction. |
 
 The goal is not simply to complete more tasks, but to make experience useful beyond the task in which it was acquired.
-
-## Our Identity · 标识理念
-
-**D surrounds A; A reaches outward.** The DA monogram gives this research ambition a shared visual form.
-
-- **D — Darwin · 积累与反馈：** a stable vertical spine and an enclosing arc represent accumulated experience, memory, and continuity of learning.
-- **A — Agent · 行动与演进：** the A extends from within the D; its pointed apex and angled strokes suggest upward, forward movement as experience becomes action.
-- **Connection & negative space · 连接与留白：** the letters share a connection while clear negative space keeps each recognizable. Learning and action belong to one system, not two isolated components.
-
-**以经验为根基，以行动为驱动，以反馈促迭代。** 这一标识表达的是系统的持续进化，覆盖记忆、Harness、世界模型、群体智能和具身智能，而非某个单一项目。
-
-Our primary brand color is orange, `#FF6900`. The identity expresses a research direction, not a claim that every project already implements the full learning loop.
 
 ## Research Directions
 
