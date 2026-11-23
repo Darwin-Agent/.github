@@ -34,42 +34,35 @@ def build():
     banner.paste(mark, (70, 60), mark)
     typography = Image.new("RGB", (1130 * TEXT_SCALE, 480 * TEXT_SCALE), "#f2f0e9")
     draw = ImageDraw.Draw(typography)
-    title = "DARWIN AGENT"
-    title_font = load_font("LuckiestGuy-Regular.ttf", 132)
+    title = "Darwin Agent"
+    title_font = load_font("LilitaOne-Regular.ttf", 128)
     title_width = title_font.getlength(title)
     if title_width > 955 * TEXT_SCALE:
-        title_font = load_font("LuckiestGuy-Regular.ttf", int(132 * 955 * TEXT_SCALE / title_width))
-    body_font = load_font("Inter-Variable.ttf", 27, 450)
-    tagline_font = load_font("Inter-Variable.ttf", 28, 750)
+        title_font = load_font("LilitaOne-Regular.ttf", int(128 * 955 * TEXT_SCALE / title_width))
+    body_font = load_font("Inter-Variable.ttf", 26, 450)
+    tagline_font = load_font("Inter-Variable.ttf", 26, 700)
     draw.text(
-        (10 * TEXT_SCALE, 222 * TEXT_SCALE),
-        title,
-        font=title_font,
-        fill="#ff6900",
-        anchor="ls",
-    )
-    draw.text(
-        (4 * TEXT_SCALE, 216 * TEXT_SCALE),
+        (4 * TEXT_SCALE, 215 * TEXT_SCALE),
         title,
         font=title_font,
         fill="#151714",
         anchor="ls",
     )
     draw.line(
-        (4 * TEXT_SCALE, 260 * TEXT_SCALE, 970 * TEXT_SCALE, 260 * TEXT_SCALE),
+        (4 * TEXT_SCALE, 255 * TEXT_SCALE, 970 * TEXT_SCALE, 255 * TEXT_SCALE),
         fill="#ff6900",
-        width=3 * TEXT_SCALE,
+        width=2 * TEXT_SCALE,
     )
     draw_tracked_text(
         draw,
-        (4 * TEXT_SCALE, 318 * TEXT_SCALE),
+        (4 * TEXT_SCALE, 310 * TEXT_SCALE),
         "EXPERIENCE  →  ACTION  →  EVOLUTION",
         tagline_font,
         "#151714",
-        tracking=0.8,
+        tracking=0,
     )
     draw.text(
-        (4 * TEXT_SCALE, 373 * TEXT_SCALE),
+        (4 * TEXT_SCALE, 365 * TEXT_SCALE),
         "Continuously learning. System-level evolution.",
         font=body_font,
         fill="#676962",
