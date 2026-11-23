@@ -6,7 +6,25 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-FONT_ROOT = Path("/usr/share/fonts/truetype/dejavu")
+FONT_ROOT = ASSETS / "fonts"
+TEXT_SCALE = 3
+
+
+def load_font(filename, size, weight=None):
+    font = ImageFont.truetype(str(FONT_ROOT / filename), size * TEXT_SCALE)
+    if weight is not None:
+        font.set_variation_by_axes([min(32, max(14, size)), weight])
+    return font
+
+
+def draw_tracked_text(draw, position, text, font, fill, tracking):
+    cursor, baseline = position
+    for index, character in enumerate(text):
+        draw.text((cursor, baseline), character, font=font, fill=fill, anchor="ls")
+        if index + 1 < len(text):
+            following = text[index + 1]
+            cursor += font.getlength(character + following) - font.getlength(following)
+            cursor += tracking * TEXT_SCALE
 
 
 def build():
@@ -14,14 +32,39 @@ def build():
     mark = Image.open(ASSETS / "darwin-mark-da-orange.png").convert("RGBA")
     mark.thumbnail((360, 360), Image.Resampling.LANCZOS)
     banner.paste(mark, (70, 60), mark)
-    draw = ImageDraw.Draw(banner)
-    title_font = ImageFont.truetype(str(FONT_ROOT / "DejaVuSans-Bold.ttf"), 82)
-    body_font = ImageFont.truetype(str(FONT_ROOT / "DejaVuSans.ttf"), 28)
-    tagline_font = ImageFont.truetype(str(FONT_ROOT / "DejaVuSans-Bold.ttf"), 30)
-    draw.text((470, 124), "Darwin Agent", font=title_font, fill="#151714")
-    draw.line((474, 245, 1440, 245), fill="#ff6900", width=4)
-    draw.text((474, 272), "EXPERIENCE  →  ACTION  →  EVOLUTION", font=tagline_font, fill="#151714")
-    draw.text((474, 337), "Continuously learning. System-level evolution.", font=body_font, fill="#676962")
+    typography = Image.new("RGB", (1130 * TEXT_SCALE, 480 * TEXT_SCALE), "#f2f0e9")
+    draw = ImageDraw.Draw(typography)
+    title_font = load_font("InstrumentSerif-Regular.ttf", 128)
+    body_font = load_font("Inter-Variable.ttf", 27, 400)
+    tagline_font = load_font("Inter-Variable.ttf", 25, 550)
+    draw.text(
+        (4 * TEXT_SCALE, 204 * TEXT_SCALE),
+        "Darwin Agent",
+        font=title_font,
+        fill="#151714",
+        anchor="ls",
+    )
+    draw.line(
+        (4 * TEXT_SCALE, 245 * TEXT_SCALE, 970 * TEXT_SCALE, 245 * TEXT_SCALE),
+        fill="#ff6900",
+        width=2 * TEXT_SCALE,
+    )
+    draw_tracked_text(
+        draw,
+        (4 * TEXT_SCALE, 301 * TEXT_SCALE),
+        "EXPERIENCE  →  ACTION  →  EVOLUTION",
+        tagline_font,
+        "#151714",
+        tracking=1.8,
+    )
+    draw.text(
+        (4 * TEXT_SCALE, 362 * TEXT_SCALE),
+        "Continuously learning. System-level evolution.",
+        font=body_font,
+        fill="#676962",
+        anchor="ls",
+    )
+    banner.paste(typography.resize((1130, 480), Image.Resampling.LANCZOS), (470, 0))
     banner.save(ASSETS / "darwin-agent-banner.png", optimize=True)
 
 
