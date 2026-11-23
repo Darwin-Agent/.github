@@ -35,10 +35,10 @@ def build():
     typography = Image.new("RGB", (1130 * TEXT_SCALE, 480 * TEXT_SCALE), "#f2f0e9")
     draw = ImageDraw.Draw(typography)
     title = "Darwin Agent"
-    title_font = load_font("LilitaOne-Regular.ttf", 128)
+    title_font = load_font("MPLUSRounded1c-Medium-Latin.ttf", 128)
     title_width = title_font.getlength(title)
     if title_width > 955 * TEXT_SCALE:
-        title_font = load_font("LilitaOne-Regular.ttf", int(128 * 955 * TEXT_SCALE / title_width))
+        title_font = load_font("MPLUSRounded1c-Medium-Latin.ttf", int(128 * 955 * TEXT_SCALE / title_width))
     body_font = load_font("Inter-Variable.ttf", 26, 450)
     tagline_font = load_font("Inter-Variable.ttf", 26, 700)
     draw.text(

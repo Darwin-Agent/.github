@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Darwin-Agent/.github/main/assets/darwin-agent-banner.png?v=20261123-simple" alt="Darwin Agent — Experience → Action → Evolution" width="100%">
+<img src="https://raw.githubusercontent.com/Darwin-Agent/.github/main/assets/darwin-agent-banner.png?v=20261123-medium" alt="Darwin Agent — Experience → Action → Evolution" width="100%">
 
 # Darwin Agent
 
